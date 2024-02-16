@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: face;
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format(opentype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --Cor: #063d1e; /*Aprendendo variáveis do CSS*/
+}
+
+header{
+    font-family: "Bebas Neue", sans-serif;
+    background-image: linear-gradient(to bottom, rgb(48, 110, 35), rgba(4, 97, 4, 0.582), rgb(2, 70, 2));
+    color: white;
+    margin: auto;
+    justify-content: center; 
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    padding: 3px;
+    min-height: 300px;
+    max-height: 100px;
+}
+
+header > p{
+    color: white;
+    font-weight: 100;
+}
+
+nav{
+    padding-top: 90px;
+    font-style: lighter;
+}
+
+nav > a{
+    color:rgb(248, 248, 248);
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #84cca4;
+    color: black;
+}
+
+nav:visited{
+    color: white;
+}
+
+main{
+    background-color: rgb(248, 248, 248);
+    display: block;
+    min-width: 320px;
+    max-width: 800px;
+    padding: 8px;
+    margin: auto;
+    background-attachment: fixed;
+    box-shadow: 3px 3px 10px rgb(105, 108, 109);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article{
+    font: normal lighter 1em 'Arial, Verdana, Helvetica, sans-serif';
+    text-indent: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: center; 
+    text-align: justify;
+}
+
+._fonte{
+    font: normal bolder 2em 'face';
+    font-family: face;
+    color: rgb(37, 119, 37);
+}
+
+._fundo{
+    background-image: linear-gradient(to right, rgba(197, 241, 197, 0.979), rgba(204, 231, 204, 0.925), rgba(237, 245, 237, 0.925));
+}
+
+aside > h4{
+    padding: 5px;
+    margin: -10px -5px 0px -5px;
+    text-align: justify;
+    font: normal normal 1em 'Arial, Verdana, Helvetica, sans-serif';
+    border-radius: 10px 10px 0px 10px;
+}
+
+.negrito{
+    color: rgb(7, 88, 7);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(207, 231, 207);
+}
+
+.negrito:hover{
+    color: rgb(32, 173, 4);
+}
+
+body{
+    background-color: #c5ebd6;
+}
+
+.imagem{
+    margin: auto;
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px; /*Definir um valor máximo pq a iamgem perde a qualidade*/
+    display: block;
+    margin: auto;
+}
+
+aside{
+    background-color: rgb(198, 230, 198);
+    border-radius: 10px;
+    padding: 0px 5px 5px 5px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#caixa{
+    background-color: rgb(94, 131, 94);
+    color: white;
+    padding: 8px 0px;
+    font-weight: bold;
+    border-radius: 6px 6px 0px 0px;
+    min-width: 320px;
+    max-width: 800px;
+}
+
+aside > ul{
+    list-style-type: '\2714'; /*emoji*/
+    columns: 2;
+}
+
+div.video{
+    background-color: var(--Cor);
+    margin: 0px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 56,5%; /*Muda a largura da barra preta que fica dentro do vídeo*/
+    /*position: relative;*/
+}
+
+div.video > iframe{
+    top: 5%;
+    width: 90%;
+    height: 20em;
+    /*position: absolute; -----> Guanabara colocou isso, mas meu código funcionou sem e ficou responsivo*/
+}
+
+footer > p{
+    background-color: rgb(4, 39, 4);
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
